@@ -6,8 +6,8 @@ public class Main {
 		System.out.println(findFloor(arr, -752));
 		System.out.println(findFloor(arr, 3276));
 	}
-
-	public static int findFloor(int[] arr, int target) { //in sorted arr returns greatest num smaller than target through binary search
+	//implements binary search, so O(log n)
+	public static int findFloor(int[] arr, int target) { //in sorted arr returns greatest num <= than target
 		if (target < arr[0]) { //if no num is greater target
 			return -1;
 		}
